@@ -39,6 +39,10 @@
 			isa = PBXGroup;
 			children = (
 				A9723B491F1DB9600058917D /* Switch.ME */,
+				A9723B5E1F1DB9840058917D /* Model */,
+				A9723B5D1F1DB97B0058917D /* View */,
+				A9723B5C1F1DB96D0058917D /* Controller */,
+				A9723B5F1F1DB98C0058917D /* Resources */,
 				A9723B481F1DB9600058917D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,13 +58,45 @@
 		A9723B491F1DB9600058917D /* Switch.ME */ = {
 			isa = PBXGroup;
 			children = (
-				A9723B4A1F1DB9600058917D /* AppDelegate.swift */,
-				A9723B4C1F1DB9600058917D /* ViewController.swift */,
-				A9723B4E1F1DB9610058917D /* Main.storyboard */,
-				A9723B511F1DB9610058917D /* Assets.xcassets */,
-				A9723B531F1DB9610058917D /* LaunchScreen.storyboard */,
-				A9723B561F1DB9610058917D /* Info.plist */,
 			);
+			path = Switch.ME;
+			sourceTree = "<group>";
+		};
+		A9723B5C1F1DB96D0058917D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A9723B4C1F1DB9600058917D /* ViewController.swift */,
+			);
+			name = Controller;
+			path = Switch.ME;
+			sourceTree = "<group>";
+		};
+		A9723B5D1F1DB97B0058917D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9723B4E1F1DB9610058917D /* Main.storyboard */,
+				A9723B531F1DB9610058917D /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			path = Switch.ME;
+			sourceTree = "<group>";
+		};
+		A9723B5E1F1DB9840058917D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9723B4A1F1DB9600058917D /* AppDelegate.swift */,
+			);
+			name = Model;
+			path = Switch.ME;
+			sourceTree = "<group>";
+		};
+		A9723B5F1F1DB98C0058917D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9723B561F1DB9610058917D /* Info.plist */,
+				A9723B511F1DB9610058917D /* Assets.xcassets */,
+			);
+			name = Resources;
 			path = Switch.ME;
 			sourceTree = "<group>";
 		};

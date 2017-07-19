@@ -9,17 +9,50 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var redCircle: UIImageView!
+    @IBOutlet weak var yellowCircle: UIImageView!
+    @IBOutlet weak var blueCircle: UIImageView!
+    @IBOutlet weak var label: UILabel!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        redCircle.isHidden = true
+        blueCircle.isHidden = true
+        yellowCircle.isHidden = true
+        
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    @IBAction func btnPressed(_ sender: UIButton) {
+        
+        label.text = "Switch Me!"
+        
+        sender.tag += 1
+        if sender.tag > 4 { sender.tag = 0 }
+        
+        switch sender.tag {
+        case 1:
+            redCircle.isHidden = false
+        case 2:
+            blueCircle.isHidden = false
+            redCircle.isHidden = true
+        case 3:
+            yellowCircle.isHidden = false
+            blueCircle.isHidden = true
+        case 4:
+            yellowCircle.isHidden = true
+        default:
+            redCircle.isHidden = false
+            blueCircle.isHidden = false
+            yellowCircle.isHidden = false
+            
+        }
     }
-
-
+    
+    
+    
 }
-
